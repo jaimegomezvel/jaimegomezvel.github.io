@@ -10,7 +10,7 @@ Para empezar la intalación pondremos en la terminal de comandos de nuestra maqu
 Una vez intalado para ver si la instalacion se ha hecho correctamente escribiremos:
 ` systemctl status nginx`
 
-![imagen1](nginx/imagen1.png)
+![imagen1](assets/imagenes/nginx/imagen1.png)
 
 ### Creacion de una carpeta para el sitio Web
 Todos los archivos que nginx necesita para formar un sitio web se organizara en carpetas. Esta carpeta estara ubicada  normalmente en `/var/www`.
@@ -27,7 +27,7 @@ Aparte de eso cambiaremos los derechos sobre la carpeta para que el propietario 
 ```
 	sudo  chmod  -R  755  /var/www/nombre_web
 ```
-![imagen2](nginx/imagen2.png)
+![imagen2](assets/imagenes/nginx/imagen2.png)
 
 Ahora para ver si el servidor funciona podréis acceder correctamente desde vuestro cliente con ` http://ip-maq-virtual`.
 ### Configuración de servidor web NGINX
@@ -39,11 +39,11 @@ Para que NGINX nos presente el contenido de nuestra web, es necesario crear un b
 ```
 Y el contenido de dicho archivo sera:
 
-![imagen3](nginx/imagen3.png)
+![imagen3](assets/imagenes/nginx/imagen3.png)
 
 Y crearemos un archivo simbólico entre este archivo y el de sitios que están habilitados, para que se dé de alta automáticamente y después reiniciaremos el servidor para aplicar la configuración:
 
-![imagen4](nginx/imagen4.png)
+![imagen4](assets/imagenes/nginx/imagen4.png)
 
 ## Comprobaciones
 ### Comprobación del correcto funcionamiento
@@ -54,7 +54,7 @@ A este archivo hay que añardirle esta linea:
 `X.X.X.X nombre_web`
 donde X.X.X.X es la IP de la maquina virtual.
 
-![imagen5](nginx/imagen5.png)
+![imagen5](assets/imagenes/nginx/imagen5.png)
 
 ### Comprobar registros del servidor
 
